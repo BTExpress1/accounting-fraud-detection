@@ -43,7 +43,7 @@
 | ch_rsst       | RSST Accruals                                              |
 | dch_rec       | Change in Receivables                                      |
 | dch_inv       | Change in Inventory                                        |
-| soft_assset   | Percentage of Soft Assets                                  |
+| soft_asssets  | Percentage of Soft Assets                                  |
 | dpi           | Depreciation Index                                         |
 | ch_cs         | Change in Cash Sales                                       |
 | ch_cm         | Change in Cash Margin                                      |
@@ -54,3 +54,11 @@
 | issue         | Actual Issuance                                            |
 | bm            | Book-to-Market                                             |
 
+## Additional Identifiers and Labels
+
+| Variable   | Description                                                      |
+|------------|------------------------------------------------------------------|
+| `fyear`    | Fiscal year                                                      |
+| `gvkey`    | Global Company Key (unique firm ID from Compustat)              |
+| `p_aaer`   | Flag for AAER (Accounting and Auditing Enforcement Releases)     |
+| `misstate` | Indicator for accounting fraud (1 = fraud, 0 = non-fraud)        |
