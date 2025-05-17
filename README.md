@@ -3,17 +3,18 @@
 
 [![Python](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](./LICENSE)
+[![Codebook](https://img.shields.io/badge/docs-codebook-blue)](docs/codebook.md)
 
 ## Overview
 
 ## Problem Statement
 
 ## Dataset
-## Dataset
-
 The primary dataset was sourced from the [FraudDetection GitHub repository](https://github.com/JarFraud/FraudDetection), which accompanies a peer-reviewed paper published in the *Journal of Accounting Research*.
 
 - Dataset URL: [data_FraudDetection_JAR2020.csv](https://raw.githubusercontent.com/JarFraud/FraudDetection/refs/heads/master/data_FraudDetection_JAR2020.csv)
+
+For detailed descriptions of all raw and engineered variables, refer to the [codebook](https://github.com/BTExpress1/accounting-fraud-detection/blob/91c49a5ff1a04842bdc0ad81e0b3f0098035ed07/docs/codebook.md).
 
 Several datasets were explored during the discovery phase. This dataset was selected for its high relevance, feature richness, and grounding in academic research.
 
