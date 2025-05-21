@@ -39,8 +39,8 @@ If you use this dataset, please cite the original authors:
 > [Read the paper](https://onlinelibrary.wiley.com/doi/10.1111/1475-679X.12292)
 
 ## 📊 Dataset Selection Notes
-
 A considerable amount of time was spent selecting a suitable dataset. Multiple public sources were evaluated before finalizing the financial fraud dataset published in the Journal of Accounting Research (JAR). The chosen dataset provides rich structured financial data with confirmed misstatement labels, enabling supervised learning for fraud detection.
+
 ---
 
 ## 🧠 Modeling Approach
