@@ -1,9 +1,10 @@
 # Accounting Fraud Detection (2023)
 
-**License:** MIT  
-**Python Version:** 3.11  
-**Last Updated:** May 2025  
-📄 [View in NBViewer](https://nbviewer.org/github/BTExpress1/accounting-fraud-detection/blob/main/notebooks/)  
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Git LFS](https://img.shields.io/badge/Git-LFS-critical)
+[![View in NBViewer](https://img.shields.io/badge/view%20in-NBViewer-orange)](https://nbviewer.org/github/BTExpress1/accounting-fraud-detection/tree/main/notebooks/)
+
 
 ---
 
@@ -39,7 +40,7 @@ If you use this dataset, please cite the original authors:
 
 ## 📊 Dataset Selection Notes
 
-A **considerable amount of time was spent selecting a suitable dataset**. Multiple public sources were evaluated before finalizing the financial fraud dataset published in the Journal of Accounting Research (JAR). The chosen dataset provides rich structured financial data with confirmed misstatement labels, enabling supervised learning for fraud detection.
+A considerable amount of time was spent selecting a suitable dataset. Multiple public sources were evaluated before finalizing the financial fraud dataset published in the Journal of Accounting Research (JAR). The chosen dataset provides rich structured financial data with confirmed misstatement labels, enabling supervised learning for fraud detection.
 ---
 
 ## 🧠 Modeling Approach
