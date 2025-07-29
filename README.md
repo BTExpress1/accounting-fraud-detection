@@ -63,10 +63,9 @@ To improve recall and handle the imbalance more effectively, we moved to CatBoos
 
 A blended ensemble (80% CatBoost / 20% DNN) was created, tuned via GridSearch to optimize fraud recall while maintaining business-usable precision.
 
-###Threshold & Interpretability Enhancements
+### Threshold & Interpretability Enhancements
 
 - KS-based thresholding: Kolmogorov–Smirnov statistics were used to set and simulate thresholds for different “top N” review scenarios (e.g., top 1K, 3K, 5K cases).
-
 - SHAP interpretability: Added SHAP value analysis to provide local and global explanations for fraud flags, giving compliance teams insight into why a record was flagged.
 
 ### Modeling Refinement
