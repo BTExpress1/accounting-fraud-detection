@@ -55,15 +55,23 @@ If you use this dataset, please cite the original authors:
 
 ### Baseline Modeling
 
-To establish a performance benchmark, a simple logistic regression model was applied using scaled features. No feature selection or hyperparameter tuning was performed. This baseline helped in understanding the data's predictive capacity before employing more complex models.
+A Random Forest model was used as the baseline to gauge the dataset’s predictive capacity without heavy tuning. This provided an early benchmark and highlighted the severe class imbalance challenge — fraud cases were <1% of observations.
 
 ### Advanced Modeling
 
-Recognizing the limitations of linear models in capturing complex patterns, advanced tree-based models like Random Forest and LightGBM were implemented. These models demonstrated improved performance in detecting fraudulent activities.
+To improve recall and handle the imbalance more effectively, we moved to CatBoost, which excelled with categorical handling and delivered strong baseline ROC-AUC performance. A Deep Neural Network (DNN) was then introduced to capture nonlinear relationships.
+
+A blended ensemble (80% CatBoost / 20% DNN) was created, tuned via GridSearch to optimize fraud recall while maintaining business-usable precision.
+
+###Threshold & Interpretability Enhancements
+
+- KS-based thresholding: Kolmogorov–Smirnov statistics were used to set and simulate thresholds for different “top N” review scenarios (e.g., top 1K, 3K, 5K cases).
+
+- SHAP interpretability: Added SHAP value analysis to provide local and global explanations for fraud flags, giving compliance teams insight into why a record was flagged.
 
 ### Modeling Refinement
 
-During model development, significant overfitting was observed, driven by features strongly correlated with the target variable. To address this, several high-weight, redundant, or skewed features were removed to reduce bias and improve generalization. The final model emphasizes financial ratios and accounting metrics that are more indicative of fraudulent behavior.
+Overfitting was reduced by removing highly correlated or redundant features. The final model focuses on interpretable financial ratios (e.g., Days Payable Index, Retained Earnings changes) that auditors can understand and trace.
 
 ## 🚀 Usage Instructions
 
